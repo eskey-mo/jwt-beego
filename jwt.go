@@ -101,7 +101,7 @@ func (e EasyToken) ValidateToken(tokenString string) (bool, error) {
 	}
 }
 
-func (e EasyToken) GetUsername(tokenString string) (string, error) {
+func (e EasyToken) GetIss(tokenString string) (string, error) {
 	// Token from another example.  This token is expired
 	//var tokenString = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJleHAiOjE1MDAwLCJpc3MiOiJ0ZXN0In0.HE7fK0xOQwFEr4WDgRWj4teRPZ6i3GLwD5YCm6Pwu_c"
 	if tokenString == "" {
